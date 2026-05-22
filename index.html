@@ -4,12 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Execute Acquisition</title>
-  <meta http-equiv="refresh" content="0; url=/html/index1.html" />
-  <script>
-    window.location.replace('/html/index1.html');
-  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/html/index1.html">Execute Acquisition</a>…</p>
+  <noscript>
+    <p>JavaScript is required to load the site. Open <a href="/html/index1.html">Execute Acquisition</a>.</p>
+  </noscript>
+  <script>
+    fetch('/html/index1.html')
+      .then(function(response) { return response.text(); })
+      .then(function(html) {
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(function() {
+        window.location.replace('/html/index1.html');
+      });
+  </script>
 </body>
 </html>
