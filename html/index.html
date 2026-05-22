@@ -106,8 +106,8 @@
 <style>
         .glass-panel {
             background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
@@ -182,14 +182,21 @@
             box-shadow: 0 0 40px rgba(78, 222, 163, 0.2);
             border: 1px solid rgba(78, 222, 163, 0.3);
         }
+
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
     </style>
 </head>
 <body class="bg-background text-on-background font-body-lg overflow-x-hidden">
 <nav class="fixed top-0 w-full z-50 bg-transparent transition-all duration-500" id="navbar">
 <div class="max-w-container-max mx-auto px-margin-x flex justify-between items-center h-28">
-<div class="font-display-lg text-headline-md font-bold text-on-surface tracking-tight">
+<a class="flex items-center gap-4" href="#home" aria-label="Execute Acquisition home">
+<img alt="Execute Acquisition logo" class="w-20 h-20 md:w-24 md:h-24 object-contain drop-shadow-[0_0_18px_rgba(255,255,255,0.18)]" src="../public/EA-removebg-preview.png"/>
+<div class="font-display-lg text-[28px] md:text-[34px] leading-none font-bold text-on-surface tracking-tight whitespace-nowrap">
             Execute Acquisition
         </div>
+</a>
 <div class="hidden md:flex items-center space-x-gutter">
 <a class="text-primary font-label-md text-label-md font-bold border-b-2 border-primary pb-1" href="#home">Home</a>
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors px-4 py-3 rounded-md duration-300" href="#services">Services</a>
@@ -197,7 +204,7 @@
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors px-4 py-3 rounded-md duration-300" href="#testimonials">Testimonials</a>
 <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors px-4 py-3 rounded-md duration-300" href="#results">Results</a>
 </div>
-<a class="hidden md:inline-flex bg-primary-container text-on-primary-container font-label-md text-label-md px-8 py-4 rounded-lg btn-primary-glow font-bold items-center gap-3" href="https://calendly.com/huzaif-execute-acquisition/45min" target="_blank">
+<a class="hidden md:inline-flex bg-primary-container text-on-primary-container font-label-md text-label-md px-8 py-4 rounded-lg btn-primary-glow font-bold items-center gap-3" href="https://calendly.com/huzaif-execute-acquisition/45min" rel="noopener noreferrer" target="_blank">
             Book A Call <span class="material-symbols-outlined text-[24px]">arrow_forward</span>
 </a>
 <button aria-label="Menu" class="md:hidden text-on-surface">
@@ -222,7 +229,7 @@
                     Stop relying on unpredictable referrals and low-quality shared leads. Build a predictable, high-converting pipeline designed exclusively for high-ticket commercial cleaning contracts.
                 </p>
 <div class="flex flex-col sm:flex-row gap-6">
-<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-10 py-5 rounded-lg btn-primary-glow animate-pulse-btn font-bold text-center inline-flex items-center justify-center gap-3" href="https://calendly.com/huzaif-execute-acquisition/45min" target="_blank">
+<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-10 py-5 rounded-lg btn-primary-glow animate-pulse-btn font-bold text-center inline-flex items-center justify-center gap-3" href="https://calendly.com/huzaif-execute-acquisition/45min" rel="noopener noreferrer" target="_blank">
                         Book A Free Strategy Call <span class="material-symbols-outlined text-[24px]">arrow_outward</span>
 </a>
 <a class="glass-panel text-on-surface font-label-md text-label-md px-10 py-5 rounded-lg text-center inline-flex items-center justify-center hover:bg-white/5 transition-colors" href="#how-it-works">
@@ -233,7 +240,7 @@
 <div class="md:col-span-4 mt-16 md:mt-0 space-y-8">
 <div class="glass-panel p-8 rounded-xl card-lift flex items-center gap-6 reveal animate-float">
 <div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center border border-primary/30">
-<span class="material-symbols-outlined text-[32px] text-primary" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="material-symbols-outlined fill text-[32px] text-primary">monitoring</span>
 </div>
 <div>
 <div class="font-headline-sm text-headline-sm text-on-surface">10-20</div>
@@ -242,7 +249,7 @@
 </div>
 <div class="glass-panel p-8 rounded-xl card-lift flex items-center gap-6 ml-4 md:ml-12 reveal">
 <div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center border border-secondary/30">
-<span class="material-symbols-outlined text-[32px] text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill text-[32px] text-secondary">star</span>
 </div>
 <div>
 <div class="font-headline-sm text-headline-sm text-on-surface">4.7/5</div>
@@ -251,7 +258,7 @@
 </div>
 <div class="glass-panel p-8 rounded-xl card-lift flex items-center gap-6 reveal">
 <div class="w-16 h-16 rounded-full bg-surface-bright/50 flex items-center justify-center border border-outline-variant/50">
-<span class="material-symbols-outlined text-[32px] text-on-surface" style="font-variation-settings: 'FILL' 1;">apartment</span>
+<span class="material-symbols-outlined fill text-[32px] text-on-surface">apartment</span>
 </div>
 <div>
 <div class="font-headline-sm text-headline-sm text-on-surface">100%</div>
@@ -502,7 +509,7 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto mb-16">
                 We are so confident in our system that we guarantee the results. If we don't deliver the agreed number of qualified commercial cleaning leads, you don't pay. It's that simple. We take all the risk.
             </p>
-<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-12 py-6 rounded-xl btn-primary-glow font-bold text-center inline-flex items-center justify-center gap-4 text-xl" href="https://calendly.com/huzaif-execute-acquisition/45min" target="_blank">
+<a class="bg-primary-container text-on-primary-container font-label-md text-label-md px-12 py-6 rounded-xl btn-primary-glow font-bold text-center inline-flex items-center justify-center gap-4 text-xl" href="https://calendly.com/huzaif-execute-acquisition/45min" rel="noopener noreferrer" target="_blank">
                 Claim Your Guaranteed Growth <span class="material-symbols-outlined text-[32px]">arrow_forward</span>
 </a>
 </div>
@@ -523,7 +530,7 @@
 </div>
 <div class="flex items-center gap-4 text-on-surface">
 <span class="material-symbols-outlined text-primary">calendar_month</span>
-<span>Available Mon-Fri, 9am - 6pm EST</span>
+<a class="hover:text-primary transition-colors" href="https://calendly.com/huzaif-execute-acquisition/45min" rel="noopener noreferrer" target="_blank">Book via Calendly</a>
 </div>
 </div>
 </div>
@@ -531,7 +538,7 @@
 <div class="glass-panel p-10 rounded-3xl border-primary/20">
 <h3 class="font-headline-md mb-8 text-center">Fast Track Your Growth</h3>
 <div class="space-y-6">
-<a class="flex items-center justify-between p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-primary/50 transition-all group" href="https://calendly.com/huzaif-execute-acquisition/45min" target="_blank">
+<a class="flex items-center justify-between p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-primary/50 transition-all group" href="https://calendly.com/huzaif-execute-acquisition/45min" rel="noopener noreferrer" target="_blank">
 <div class="flex items-center gap-6">
 <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
 <span class="material-symbols-outlined text-primary">call</span>
@@ -565,9 +572,12 @@
 <footer class="bg-surface-container-lowest w-full py-[100px] border-t border-outline-variant/10">
 <div class="max-w-container-max mx-auto px-margin-x grid grid-cols-1 md:grid-cols-4 gap-gutter">
 <div class="col-span-1 md:col-span-1">
-<div class="font-display-lg text-headline-md font-bold text-on-surface mb-6">
+<div class="flex items-center gap-4 mb-6">
+<img alt="Execute Acquisition logo" class="w-14 h-14 object-contain" src="../public/EA-removebg-preview.png"/>
+<div class="font-display-lg text-headline-md font-bold text-on-surface">
                 Execute Acquisition
             </div>
+</div>
 <p class="font-label-md text-label-md text-on-surface-variant mb-8">
                 Predictable pipeline architecture for high-ticket commercial cleaning enterprises.
             </p>
